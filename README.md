@@ -1,27 +1,15 @@
-# React + TypeScript + Vite
+### Proyecto de Aplicación de Tareas
+Este proyecto es una aplicación de tareas que permite a los usuarios agregar y eliminar tareas. Puedes ver la aplicación en funcionamiento aquí.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Ver la Aplicación de Tareas](tareas-pendientes-react-ts.netlify.app)
 
-Currently, two official plugins are available:
+### Estructura del Proyecto
+El proyecto consta de varios archivos que se encargan de diferentes aspectos de la aplicación:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### ToDoApp: Esta es la clase principal que maneja la lógica de la aplicación de tareas. Utiliza el hook useState de React para manejar el estado de la nueva tarea y la lista de tareas. Define dos funciones, handleAddTask y handleBorrarTarea, para agregar y borrar tareas respectivamente. Renderiza un formulario para agregar nuevas tareas y una lista de tareas existentes.
 
-## Expanding the ESLint configuration
+### ListaTareas: Esta clase toma una lista de tareas y una función para borrar tareas como props. Renderiza una lista de componentes Tarea, pasando la tarea individual y la función para borrar la tarea a cada componente Tarea.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Tarea: Esta clase toma una tarea y una función para borrar la tarea como props. Renderiza la tarea y un botón para borrar la tarea.
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### index: Este es el punto de entrada de la aplicación. Importa ToDoApp y lo renderiza en el elemento con id ‘root’ del DOM.
