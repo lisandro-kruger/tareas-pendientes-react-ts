@@ -1,7 +1,7 @@
 ### Proyecto de Aplicación de Tareas
 Este proyecto es una aplicación de tareas que permite a los usuarios agregar y eliminar tareas. Puedes ver la aplicación en funcionamiento aquí.
 
-[Ver la Aplicación de Tareas](tareas-pendientes-react-ts.netlify.app)
+[Ver la Aplicación de Tareas](https://tareas-pendientes-react-ts.netlify.app)
 
 ### Estructura del Proyecto
 El proyecto consta de varios archivos que se encargan de diferentes aspectos de la aplicación:
